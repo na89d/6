@@ -52,7 +52,7 @@ const C={
 };
 const $=id=>document.getElementById(id),NS="http://www.w3.org/2000/svg";
 $("title").textContent=C.title;$("sub").textContent=C.sub;
-const N=C.slices.length,A=360/N,wheel=$("wheel");
+const N=C.slices.length,A=400/N,wheel=$("wheel");
 const pt=(deg,r)=>[100+r*Math.sin(deg*Math.PI/180),100-r*Math.cos(deg*Math.PI/180)];
 C.slices.forEach((s,i)=>{
   const [x1,y1]=pt(i*A,96),[x2,y2]=pt((i+1)*A,96);
